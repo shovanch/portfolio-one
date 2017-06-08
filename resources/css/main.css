@@ -1,0 +1,298 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+
+@font-face {
+    font-family: 'GT Eesti Pro Display';
+    src: url('resources/fonts/GTEestiProDisplay-Regular.eot');
+    src: url('resources/fonts/GTEestiProDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('resources/fonts/GTEestiProDisplay-Regular.woff') format('woff'), url('resources/fonts/GTEestiProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('resources/fonts/FuturaPT-Medium.eot');
+    src: url('resources/fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'), url('resources/fonts/FuturaPT-Medium.woff') format('woff'), url('resources/fonts/FuturaPT-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Eesti Pro Display';
+    src: url('resources/fonts/GTEestiProDisplay-Medium.eot');
+    src: url('resources/fonts/GTEestiProDisplay-Medium.eot?#iefix') format('embedded-opentype'), url('resources/fonts/GTEestiProDisplay-Medium.woff') format('woff'), url('resources/fonts/GTEestiProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+a,
+p {
+    color: #f2f2f2;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* * {
+    border: 1px solid tomato;
+} */
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+
+/* ---- Navigation ---- */
+
+header {
+    margin: 0;
+    text-align: center;
+    background: #ffc80a;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    font-family: 'Raleway';
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+}
+
+header ul {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    padding-left: 0;
+}
+
+header li a {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    font-family: 'GT Eesti Pro Display';
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 2.1px;
+    border-radius: 30px;
+    background: #f05638;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+/* ---- Layout Containers ---- */
+
+
+/*-- About Section --*/
+
+.about {
+    padding-bottom: 2rem;
+    text-align: center;
+    background: #8d76be;
+}
+
+.about h1 {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding-top: 3rem;
+    font-family: 'Oswald';
+    font-size: 4.8rem;
+    font-weight: normal;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+
+.about h2 {
+    margin: 0;
+    font-family: 'GT Eesti Pro Display';
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2;
+}
+
+.about h3 {
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    font-family: 'Futura PT';
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+}
+
+.about img {
+    width: 21px;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.about a {
+    display: inline;
+}
+
+
+/*-- Projects Section --*/
+
+main {
+    background: #1abc9c;
+}
+
+main h1 {
+    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+.project-container {
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+}
+
+.project-container h2 {
+    margin: 0;
+    padding-top: 1.5rem;
+    font-family: 'Lato';
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.project-container p {
+    margin-bottom: 2.5rem;
+    font-family: 'Lato';
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: 0.56px;
+}
+
+.project-container span {
+    margin-right: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.project-container a {
+    display: inline-block;
+    padding: 0.45rem 0.6rem;
+    font-family: 'Lato';
+    font-weight: bold;
+    letter-spacing: 1.95px;
+    border-radius: 20px;
+    background: #8e44ad;
+    text-decoration: none;
+}
+
+.project-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*-- Footer Section --*/
+
+footer img {
+    display: none;
+    margin-top: 0;
+}
+
+form {
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 22px;
+    padding-left: 3rem;
+}
+
+input,
+select,
+textarea,
+label {
+    font-family: 'Roboto';
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 100%;
+    letter-spacing: 1.35px;
+    color: #333;
+}
+
+.contact {
+    border: 0;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+    display: block;
+    margin: 10px 0 27px;
+    padding: 5px 8px;
+    border: 0;
+    border-bottom: 1px solid #333;
+    outline: 0;
+}
+
+.contact input,
+.contact textarea {
+    width: 80%;
+}
+
+.contact select {
+    width: 60px;
+    height: 34px;
+}
+
+.contact text-area {
+    height: 78px;
+}
+
+.btn-default {
+    padding: 5px 20px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 39.4618px;
+    background: #ffc80a;
+}
+
+
+/* ---- Page Elements ---- */
+
+
+/* =================================
+  Media Queries
+==================================== */

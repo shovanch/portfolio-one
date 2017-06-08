@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:200|Raleway:700|Roboto" rel="stylesheet">
+    <link rel=stylesheet href="resources/css/normalize.css">
+    <link rel=stylesheet href="resources/css/main.css">
+    <title>Shovan Chatterjee</title>
+</head>
+<body>
+    <header>
+        <h1>shovan chatterjee</h1>
+        <nav>
+            <ul>
+                <li><a href="#ab">about me</a></li>
+                <li><a href="#pro">projects</a></li>
+                <li><a href="#con">contact</a></li>
+            </ul>
+        </nav>
+    </header><!-- /header -->
+    
+    <div class="about" id="ab">
+        <h1>hello</h1>
+        <h2>I am Shovan Chatterjee</h2>
+        <h3>I am an aspiring web developer, learner of things and heavy coffee drinker.</h3>
+        <a href="https://github.com/shovanch" target="_blank"><img src="resources/img/github.png" alt=""></a>
+        <a href="https://twitter.com/shovan_ch" target="_blank"><img src="resources/img/twitter.png" alt=""></a>
+
+    </div>
+
+    <main id="pro">
+        <h1>projects</h1>
+        <div class="container">
+            <div class="project-container">
+                <img src="resources/img/fin.png" alt="">
+                <h2>cs50 finance</h2>
+                <p>A Stock market stimulation site. Made using PHP and Mysql</p>
+                <span><a href="https://github.com/shovanch/cs50-finance" target="_blank">github</a></span>
+                <span><a href="http://www.financify.esy.es/" target="_blank">live</a></span>
+            </div>
+
+              <div class="project-container">
+                  <img src="resources/img/twt.png" alt="">
+                  <h2>twiiter analysis</h2>
+                  <p>Analyses tweets from a given handle. Show percentage of  positive, negative or neutral tweets. Made using Flask & Twitter API</p>
+                  <span><a href="https://github.com/shovanch/twitter-sentiment-analysis" target="_blank">github</a></span>
+                  <span><a href="https://twitsentiments.herokuapp.com/" target="_blank">live</a></span>
+              </div>
+            
+              <!-- <div class="project-container">
+                    <img src="resources/img/mash.png" alt="">
+                    <h2>google news mashup</h2>
+                    <p>A web app where user can search for place, then the map will show latest news from the place. Made using PHP & Google Map API</p>
+                    <span><a href="">github</a></span>
+                    <span><a href="">live</a></span>
+                </div> -->  
+        </div>
+        
+    </main> <!-- main area -->
+
+    <footer id="con">
+        <img src="resources/img/image.jpg" alt="">
+        
+        <form action="#" method="post" accept-charset="utf-8">
+        <fieldset class="contact">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Full name" required>
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="Email address" required>
+            </label>
+
+            <label>
+              Message
+              <textarea name="comments"></textarea>
+            </label>
+          </fieldset>
+          <input class="btn btn-default" type="submit" name="submit" value="SEND">
+        </form>
+    </footer><!-- footer -->
+    
+</body>
+</html>
