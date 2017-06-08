@@ -2,7 +2,6 @@
   Base Element Styles
 ==================================== */
 
-
 @font-face {
     font-family: 'GT Eesti Pro Display';
     src: url('resources/fonts/GTEestiProDisplay-Regular.eot');
@@ -11,21 +10,21 @@
     font-style: normal;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Futura PT';
     src: url('resources/fonts/FuturaPT-Medium.eot');
     src: url('resources/fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'), url('resources/fonts/FuturaPT-Medium.woff') format('woff'), url('resources/fonts/FuturaPT-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
-}
+}*/
 
-@font-face {
+/*@font-face {
     font-family: 'GT Eesti Pro Display';
     src: url('resources/fonts/GTEestiProDisplay-Medium.eot');
     src: url('resources/fonts/GTEestiProDisplay-Medium.eot?#iefix') format('embedded-opentype'), url('resources/fonts/GTEestiProDisplay-Medium.woff') format('woff'), url('resources/fonts/GTEestiProDisplay-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
-}
+}*/
 
 html {
     box-sizing: border-box;
@@ -54,7 +53,6 @@ p {
 ul {
     list-style: none;
 }
-
 
 /* * {
     border: 1px solid tomato;
@@ -97,7 +95,7 @@ header li a {
     display: block;
     margin-bottom: 1rem;
     padding: 0.7rem;
-    font-family: 'GT Eesti Pro Display';
+    font-family: 'Raleway', 'GT Eesti Pro Display';
     font-size: 1.4rem;
     font-weight: 400;
     letter-spacing: 2.1px;
@@ -133,18 +131,24 @@ header li a {
 
 .about h2 {
     margin: 0;
-    font-family: 'GT Eesti Pro Display';
+    font-family: 'Lato', 'GT Eesti Pro Display';
     font-size: 2rem;
     font-weight: normal;
     line-height: 2;
+    letter-spacing: 1.3px;
+}
+.about span {
+    font-weight: 600;
+    letter-spacing: 1.7px;
+    padding-left: 5px;
 }
 
 .about h3 {
     padding-right: 2rem;
     padding-bottom: 1rem;
     padding-left: 2rem;
-    font-family: 'Futura PT';
-    font-size: 1.6rem;
+    font-family: 'Raleway', 'Futura PT';
+    font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.6;
     letter-spacing: 1.3px;
@@ -277,8 +281,8 @@ label {
     height: 34px;
 }
 
-.contact text-area {
-    height: 78px;
+.contact textarea {
+    height: 40px;
 }
 
 .btn-default {
