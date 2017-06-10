@@ -1,31 +1,6 @@
 /* =================================
   Base Element Styles
 ==================================== */
-
-@font-face {
-    font-family: 'GT Eesti Pro Display';
-    src: url('resources/fonts/GTEestiProDisplay-Regular.eot');
-    src: url('resources/fonts/GTEestiProDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('resources/fonts/GTEestiProDisplay-Regular.woff') format('woff'), url('resources/fonts/GTEestiProDisplay-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/*@font-face {
-    font-family: 'Futura PT';
-    src: url('resources/fonts/FuturaPT-Medium.eot');
-    src: url('resources/fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'), url('resources/fonts/FuturaPT-Medium.woff') format('woff'), url('resources/fonts/FuturaPT-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}*/
-
-/*@font-face {
-    font-family: 'GT Eesti Pro Display';
-    src: url('resources/fonts/GTEestiProDisplay-Medium.eot');
-    src: url('resources/fonts/GTEestiProDisplay-Medium.eot?#iefix') format('embedded-opentype'), url('resources/fonts/GTEestiProDisplay-Medium.woff') format('woff'), url('resources/fonts/GTEestiProDisplay-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}*/
-
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -58,11 +33,9 @@ ul {
     border: 1px solid tomato;
 } */
 
-
 /* =================================
   Base Layout Styles
 ==================================== */
-
 
 /* ---- Navigation ---- */
 
@@ -106,11 +79,9 @@ header li a {
     text-transform: capitalize;
 }
 
-
 /* ---- Layout Containers ---- */
 
-
-/*-- About Section --*/
+/* -- About Section -- */
 
 .about {
     padding-bottom: 2rem;
@@ -137,10 +108,11 @@ header li a {
     line-height: 2;
     letter-spacing: 1.3px;
 }
+
 .about span {
+    padding-left: 5px;
     font-weight: 600;
     letter-spacing: 1.7px;
-    padding-left: 5px;
 }
 
 .about h3 {
@@ -164,8 +136,7 @@ header li a {
     display: inline;
 }
 
-
-/*-- Projects Section --*/
+/* -- Projects Section -- */
 
 main {
     background: #1abc9c;
@@ -229,8 +200,7 @@ main h1 {
     height: auto;
 }
 
-
-/*-- Footer Section --*/
+/* -- Footer Section -- */
 
 footer img {
     display: none;
@@ -293,10 +263,66 @@ label {
     background: #ffc80a;
 }
 
-
 /* ---- Page Elements ---- */
-
 
 /* =================================
   Media Queries
 ==================================== */
+@media (min-width: 769px) {
+    .clearfix::after {
+        display: table;
+        clear: both;
+        content: ' ';
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .about h1 {
+        font-size: 5rem;
+    }
+
+    .about h3 {
+        font-size: 1.6rem;
+    }
+
+    main h1 {
+        font-size: 2.7rem;
+    }
+
+    .project-container {
+        float: left;
+        width: 50%;
+    }
+
+    .project-container h2 {
+        font-size: 2rem;
+    }
+
+    .project-container p {
+        font-size: 1.6rem;
+    }
+
+    .project-container img {
+        padding: 10px;
+        border: 1px solid #c8baba;
+        border-radius: 5px;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    input,
+    select,
+    textarea,
+    label {
+        font-size: 1.4rem;
+    }
+
+    .btn-default {
+        padding: 8px 20px;
+        font-size: 1.2rem;
+    }
+}
